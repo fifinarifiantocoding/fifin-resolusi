@@ -4,7 +4,7 @@ function koneksi()
 {
   return mysqli_connect('localhost', 'root', '', 'phpdasar');
 }
-// urutan penulisan koneksi ke database ('host','username','pasword','nama database');
+// cara penulisan koneksi ke database ('host','username','pasword','nama database');
 
 function query($query)
 {

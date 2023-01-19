@@ -14,7 +14,7 @@ $mahasiswa = query("SELECT * FROM mahasiswa");
 </head>
 
 <body>
-  <h1>Daftar Mahasiswa</h1>
+  <h1>Daftar Mahasiswa Tahun 2023</h1>
   <a href="tambah.php">Tambah mahasiswa</a>
   <br>
   <br>
