@@ -19,11 +19,12 @@ $m = query("SELECT * FROM mahasiswa WHERE id = $id");
   <ul>
     <li><img src="img/<?= $m['gambar']; ?>" width="60"></li>
     <li>NRP : <?= $m['nrp']; ?></li>
-    <li>NRP : <?= $m['nama']; ?></li>
-    <li>NRP : <?= $m['email']; ?></li>
-    <li>NRP : <?= $m['jurusan']; ?></li>
-    <li> <a href="">Ubah</a> | <a href="">Hapus</a></li>
-    <li> <a href="latihan3.php">Kembali kedaftar mahasiswa</a></li>
+    <li>Nama : <?= $m['nama']; ?></li>
+    <li>email: <?= $m['email']; ?></li>
+    <li>jurusan : <?= $m['jurusan']; ?></li>
+    <li> <a href="ubah.php?id=<?= $m['id']; ?>">Ubah</a> | <a href="hapus.php?id=<?= $m['id']; ?>" onclick="return confirm ('apakah anda yakin?');"> Hapus</a></li>
+
+    <li> <a href=" index.php">Kembali kedaftar mahasiswa</a></li>
   </ul>
 
 </body>
